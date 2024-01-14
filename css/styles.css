@@ -167,6 +167,7 @@ header {
 .header-bg-wrap {
     overflow: hidden;
     position: relative;
+    min-height: 100vh;
 }
 
 .header-bg-image {
@@ -175,6 +176,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
+    bottom: -50px;
     width: 100%;
     height: auto;
 }
