@@ -1,3 +1,7 @@
+/*My own styles - Rio Casanova*/
+
+
+/* -- Fonts -- */
 .cinzel-font {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -5,6 +9,7 @@
     font-style: normal;
 }
 
+/* -- Tag Styles -- */
 body {
     font-family: 'Cinzel', sans-serif;
     color: #666;
@@ -12,6 +17,38 @@ body {
     line-height: 1.5;
 }
 
+header {
+    position: absolute; /* This positions the header relative to its first positioned (not static) ancestor element */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+/* -- Class Styles -- */
+.hero {
+    position: relative; /* or 'static' depending on your layout */
+    z-index: 1; /* Lower than the header's z-index */
+    background-image: url("../img/verona-sunset-hero.jpg");
+    background-size: cover; /* or 'contain' or 'auto' or specific dimensions */
+    background-attachment: fixed; /* This makes the background image static */
+    background-repeat: no-repeat; /* To prevent the image from repeating */
+    background-position: center top; /* Adjust the position here */
+    height: 700px; /* Set a specific height for your header */
+    width: 100%; /* Full width */
+}
+
+.h-set {
+    max-height: 50px;
+}
+
+.bg-verona-light {
+    background-color: rgba(166, 123, 91, 0.5); /* Semi-transparent white */
+    padding: 10px; /* Add padding around the text */
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
+/* -- Template Styles -- */
 /* --- Responsive Sidebar navigation adapted from W3.CSS Templates --- */
 .w3-bar-block {
     display: flex;
@@ -123,12 +160,12 @@ header h2 { /* 40px is 2.083%  of 1920px */
 }
 
 .shine { /*  Call to action color  */
-    color: #557763;
+    color: #F5F5DC;
 }
 
 h1, h2, h3 {
     font-family: 'Cinzel', cursive;
-    color: #427ac1;
+    color: #4C1C24;
 }
 
 
@@ -152,7 +189,6 @@ p {
 /* layout */
 
 nav {
-    background-color: #fff;
     width: 100%;
 }
 
@@ -166,45 +202,12 @@ nav {
     text-decoration: underline;
 }
 
-header {
-    margin-top: 80px; /* Space for the nav on page load */
-}
-
-/*  Places the content image in the bg with the headings on top  */
-.header-bg-wrap {
-    overflow: hidden;
-    position: relative;
-    min-height: 80vh;
-}
-
-.header-bg-image {
-    opacity: 0.5;
-    /*The opacity property specifies the opacity/transparency of an element.*/
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: -50px;
-    width: 100%;
-    height: auto;
-}
 
 .header-content {
-    height: 46.296vh; /* Roughly 500px of 1080px high screen */
-    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-main, .bg-container {
-    width: 71%;
-    margin: 20px auto;
-}
-
-main {
-    padding-top: 20px;
-    overflow: hidden;
+    padding-top: 100px;
 }
 
 .content {
