@@ -34,7 +34,7 @@ header {
     background-attachment: fixed; /* This makes the background image static */
     background-repeat: no-repeat; /* To prevent the image from repeating */
     background-position: center top; /* Adjust the position here */
-    height: 700px; /* Set a specific height for your header */
+    min-height: 75vh; /* Set a specific height for your header */
     width: 100%; /* Full width */
 }
 
