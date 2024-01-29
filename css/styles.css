@@ -394,7 +394,7 @@ footer a:hover, a:active {
     }
 
     .hero {
-        background-position: center;
+        background-position: bottom center;
     }
 
     .hero h2 {
