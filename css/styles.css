@@ -395,6 +395,7 @@ footer a:hover, a:active {
 
     .hero {
         background-position: bottom center;
+        min-height: 100vh;
     }
 
     .hero h2 {
