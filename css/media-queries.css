@@ -25,11 +25,8 @@
 /* --- Mobile Styles --- */
 
 @media only screen and (min-width: 300px) and (max-width: 499px) {
-    footer ol {
-        font-size: 16px;
-        flex-wrap: wrap;
-    }
 
+    /* -- Header Styles -- */
     nav {
         display: none;
     }
@@ -48,14 +45,55 @@
         padding-top: 50px;
     }
 
+    /* -- Main Styles -- */
     .content {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
+    .accordion-content {
+        display: none;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accordion-toggle {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .accordion-toggle:after {
+        content: '\002B'; /* Unicode character for "+" sign */
+        font-size: 24px;
+        transition: transform 0.2s ease-out;
+    }
+
+    .accordion-toggle.active:after {
+        transform: rotate(45deg); /* Rotate "+" to create a "x" sign for active accordion */
+    }
+
+    /* -- Footer Styles -- */
     .footer-size {
         margin: 20px 12px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        padding: 10px 5px;
+    }
+
+    .footer-size p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer-nav {
+        font-size: 18px;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .footer-nav-item {
+        margin: 5px;
     }
 }
