@@ -1,9 +1,13 @@
 /*My own styles - Rio Casanova*/
-
-
-/* -- Fonts -- */
 .cinzel-font {
     font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.playfair-display-font {
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -11,9 +15,9 @@
 
 /* -- Tag Styles -- */
 body {
-    font-family: 'Cinzel', sans-serif;
     color: #666;
-    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 12pt;
     line-height: 1.5;
 }
 
@@ -26,6 +30,30 @@ header {
 
 nav {
     display: flex;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', cursive;
+    color: #4C1C24;
+}
+
+
+h2, h3 {
+    line-height: 1;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 18px;
 }
 
 /* -- Class Styles -- */
@@ -55,6 +83,10 @@ nav {
 .header-content {
     position: relative;
     z-index: 1; /* Ensures that .header-content and its children are above .hero-background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 
@@ -66,6 +98,7 @@ nav {
     background-color: #F5F5DC;
     padding: 2rem;
     border-radius: 5px;
+    width: 100%;
 }
 
 .bg-verona-light {
@@ -179,49 +212,12 @@ sequence. */
     opacity: 0.3
 }
 
-/* --- Typographical Scales --- */
-
-/* Viewport is the browser window size. 1vw = 1% of viewport width. */
-header h1 { /* 64px is 3.333%  of 1920px */
-    font-size: 3.333vw;
-}
-
-header h2 { /* 40px is 2.083%  of 1920px */
-    font-size: 2.083vw;
-}
-
 .shine { /*  Call to action color  */
     color: #F5F5DC;
 }
 
-h1, h2, h3 {
-    font-family: 'Cinzel', cursive;
-    color: #4C1C24;
-}
-
-
-h2, h3 {
-    line-height: 1;
-    margin: 40px 0;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-p {
-    margin-bottom: 18px;
-}
-
 /* layout */
 
-nav {
-    width: 100%;
-}
 
 .w3-bar-item:link, .w3-bar-item:visited {
     color: #427ac1;
@@ -233,17 +229,6 @@ nav {
     text-decoration: underline;
 }
 
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px;
-}
-
-.content {
-    width: 100%;
-}
 
 article img {
     border: none;
@@ -371,76 +356,5 @@ footer a:hover, a:active {
 
     .hamburger-position {
         margin-left: 10%;
-    }
-}
-
-
-/* --- Desktop Styles --- */
-
-@media only screen and (min-width: 950px) {
-
-
-}
-
-
-/* --- Laptop Styles --- */
-
-@media only screen and (min-width: 750px) {
-
-
-}
-
-/* --- Tablet Styles --- */
-
-@media only screen and (min-width: 500px) {
-    footer ol {
-        font-size: 18px;
-        flex-wrap: unset;
-    }
-
-    nav {
-        display: flex;
-    }
-
-    .hero {
-
-    }
-}
-
-/* --- Mobile Styles --- */
-
-@media only screen and (min-width: 300px) and (max-width: 499px) {
-    footer ol {
-        font-size: 16px;
-        flex-wrap: wrap;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .hero {
-        background-position: 90% center;
-        min-height: 90vh;
-    }
-
-    .hero h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .header-content {
-        padding-top: 50px;
-    }
-
-    .content {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .footer-size {
-        margin: 20px 12px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
     }
 }
