@@ -18,6 +18,8 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 12pt;
     line-height: 1.5;
+    max-width: 1320px;
+    padding: 1rem;
 }
 
 header {
@@ -86,11 +88,6 @@ p {
     align-items: center;
     justify-content: center;
     padding-top: 100px;
-}
-
-
-.h-set {
-    max-height: 50px;
 }
 
 .content {

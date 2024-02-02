@@ -12,6 +12,32 @@
         flex-wrap: nowrap;
         width: 100%;
         background: transparent;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    nav p {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        text-align: start;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        min-width: 33%;
+    }
+
+    .header-nav-item {
+        text-align: center;
+        display: flex;
+        align-items: center;
     }
 }
 

@@ -8,6 +8,11 @@ https://piccalil.li/blog/a-modern-css-reset/ */
     box-sizing: border-box;
 }
 
+html {
+    display: flex;
+    justify-content: center;
+}
+
 /* Remove default margin */
 body,
 h1,
