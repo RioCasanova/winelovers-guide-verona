@@ -1,29 +1,26 @@
 /* --- Laptop Styles --- */
 
-@media only screen and (min-width: 750px) and (max-width: 949px) {
+@media only screen and (min-width: 750px) {
 
+    header .hamburger-menu,
+    header .overlay {
+        display: none;
+    }
 
+    header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        background: transparent;
+    }
 }
 
 /* --- Tablet Styles --- */
 
 @media only screen and (min-width: 500px) {
-    footer ol {
-        font-size: 18px;
-        flex-wrap: unset;
-    }
 
-    nav {
-        display: flex;
-    }
-
-    .hero {
-
-    }
-
-    .hamburger-menu,
-    .overlay {
-        display: none;
+    .hamburger-menu {
+        padding-left: 10px;
     }
 }
 
