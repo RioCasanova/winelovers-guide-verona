@@ -26,7 +26,103 @@
 
 @media only screen and (min-width: 300px) and (max-width: 499px) {
 
+    /* -- Hamburger Nav -- */
+    /* Hamburger Menu Style */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        width: 90%; /* Width of the hamburger menu */
+        height: 100%; /* Height of the hamburger menu */
+        position: sticky;
+        top: 20px; /* Adjust as needed */
+        left: 15px; /* Adjust as needed */
+        z-index: 1001; /* Ensures the menu stays on top */
+        margin-top: 20px;
+        background: transparent;
+    }
+
+    .bar {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #F5F5DC; /* Color of hamburger icon */
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    .bar::before, .bar::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #F5F5DC; /* Color of hamburger icon */
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    .bar::before {
+        top: -8px;
+    }
+
+    .bar::after {
+        top: 8px;
+    }
+
+    /* Full Page Overlay Style */
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(76, 0, 20, 0.9); /* Black background with opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: height 0.3s ease 0.3s; /* Animation effect */
+    }
+
+    /* Overlay Content Style */
+    .overlay-content {
+        position: relative;
+        top: 15%; /* Adjust as needed */
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay-content a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px; /* Size of the menu items */
+        color: #F5F5DC; /* Color of the menu items */
+        display: block; /* Makes the links fill the container */
+        transition: 0.5s; /* Smooth transition effect */
+    }
+
+    .overlay-content a:hover, .overlay-content a:focus {
+        color: #f1f1f1; /* Color change on hover */
+    }
+
+    /* Close Button (X) Style */
+    .closebtn {
+        position: absolute;
+        top: 80%;
+        right: 45%;
+        font-size: 60px; /* Size of the close button */
+        cursor: pointer;
+        color: #F5F5DC; /* Color of the close button */
+    }
+
+
     /* -- Header Styles -- */
+    .header-content {
+        min-height: 75vh;
+    }
+
+    .bg-verona-light {
+        margin-top: 3rem;
+    }
+
     nav {
         display: none;
     }

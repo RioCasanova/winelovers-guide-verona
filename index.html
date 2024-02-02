@@ -67,7 +67,7 @@
 <!--  		</div>-->
 <!--	</div>-->
 
-<header class="d-flex flex-wrap pt-3">
+<header class="">
     <nav class="h-set flex-nowrap w-100 bg-transparent">
         <h1 hidden>The Winelovers Guide to Verona</h1>
         <p class="col-6 ps-3">Winelovers Guide</p>
@@ -79,6 +79,27 @@
             <li class="col">About</li>
         </ul>
     </nav>
+
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+    </div>
+
+    <!-- Full Page Navigation Overlay -->
+    <div class="overlay" id="navOverlay">
+        <!-- Button to close the overlay navigation (x button) -->
+        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+
+        <!-- Navigation Links -->
+        <div class="overlay-content">
+            <a href="#">Wine Tours</a>
+            <a href="#">Verona Wines</a>
+            <a href="#">Wineries</a>
+            <a href="#">Winemaking Process</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+
 </header>
 
 <main>
@@ -88,8 +109,8 @@
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <h2>The Winelovers Guide to <span class="shine">Verona, Italy</span></h2>
                 <div class="bg-verona-light">
-                    <h3 class="text-center mt-3">Savor Verona: Your Ultimate Journey Through the Heart of Italian Wine
-                        Culture</h3>
+                    <h3 class="text-center mt-3">Savor Verona: <span class="shine">Your Ultimate Journey Through the Heart of Italian Wine
+                        Culture</span></h3>
                 </div>
             </div>
         </div>
@@ -589,6 +610,23 @@
     function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
     }
+
+    // Open the navigation overlay
+    function openNav() {
+        document.getElementById("navOverlay").style.height = "100%";
+        document.querySelector('.overlay-content').style.opacity = "1"; // Fade in content
+    }
+
+    // Close the navigation overlay
+    function closeNav() {
+        document.getElementById("navOverlay").style.height = "0%";
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add event listener to the hamburger menu
+        document.querySelector('.hamburger-menu').addEventListener('click', openNav);
+
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
         // Get all "accordion-toggle" elements

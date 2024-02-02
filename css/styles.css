@@ -21,7 +21,10 @@ body {
 }
 
 header {
-    position: absolute; /* This positions the header relative to its first positioned (not static) ancestor element */
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    position: relative; /* This positions the header relative to its first positioned (not static) ancestor element */
     top: 0;
     width: 100%;
     z-index: 10;
