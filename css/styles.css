@@ -40,16 +40,13 @@ h1, h2, h3 {
 
 h2, h3 {
     line-height: 1;
-    margin: 40px 0;
+    margin: 40px 0 10px 0;
 }
 
 h2 {
     font-size: 24px;
 }
 
-h3 {
-    font-size: 20px;
-}
 
 p {
     margin-bottom: 18px;
@@ -94,10 +91,7 @@ p {
 }
 
 .content {
-    background-color: #F5F5DC;
-    padding: 2rem;
-    border-radius: 5px;
-    width: 100%;
+
 }
 
 .bg-verona-light {
@@ -236,7 +230,6 @@ article img {
 }
 
 .image-container {
-    width: 70%;
     margin: 0 auto;
 }
 
