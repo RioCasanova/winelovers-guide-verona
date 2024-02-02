@@ -80,9 +80,13 @@
     }
 
     .accordion-content {
-        display: none;
         overflow: hidden;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.5s ease-out;
+        max-height: 0;
+    }
+
+    .accordion-content.active {
+        max-height: 1000px; /* Adjust as needed to fit content */
     }
 
     .accordion-toggle {
