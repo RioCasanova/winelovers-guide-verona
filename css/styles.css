@@ -305,13 +305,13 @@ footer a:hover, a:active {
 
 .hide {
   visibility: hidden;
-  
+
 }
 .show {
   visibility: visible;
- 
+
 }
-*/
+
 /* -- End of Code for the Cookie Compliance popover window -- */
 
 @media only screen and  (min-width: 900px) {
