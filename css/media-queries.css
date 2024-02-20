@@ -2,6 +2,23 @@
 
 @media only screen and (min-width: 750px) {
 
+    /* -- advertisement styles -- */
+    /** hide small ad **/
+    img.square-ad {
+        position: absolute;
+        top: -99999px;
+        left: -9999px;
+        visibility: hidden;
+    }
+
+    /** show large ad on small screens **/
+    img.leaderboard-ad {
+        position: static;
+        visibility: visible;
+        text-align: center;
+        margin: auto;
+    }
+
     header .hamburger-menu,
     header .overlay {
         display: none;
@@ -53,6 +70,22 @@
 /* --- Mobile Styles --- */
 
 @media only screen and (min-width: 300px) and (max-width: 749px) {
+
+    /* -- advertisements styles -- */
+    /** hide large ad on small screens **/
+    img.leaderboard-ad {
+        position: absolute;
+        top: -99999px;
+        left: -9999px;
+        visibility: hidden;
+    }
+
+    img.square-ad {
+        position: static;
+        visibility: visible;
+        text-align: center;
+        margin: auto;
+    }
 
     /* -- Hamburger Nav -- */
     /* Hamburger Menu Style */
