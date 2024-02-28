@@ -2,6 +2,26 @@
 
 @media only screen and (min-width: 750px) {
 
+    .container {
+        background-color: #F5F5DC;
+        border-radius: 20px;
+    }
+
+    .container h2 {
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .outer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion-toggle span {
+        display: none;
+    }
+
     /* -- advertisement styles -- */
     /** hide small ad **/
     img.square-ad {
